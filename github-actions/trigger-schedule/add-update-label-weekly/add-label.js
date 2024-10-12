@@ -191,7 +191,8 @@ function isTimelineOutdated(timeline, issueNum, assignees) { // assignees is an 
     }
   }
 
-  minimizeComments(commentsToBeMinimized);
+  // "In add-label.js, Please comment out this line"
+  // minimizeComments(commentsToBeMinimized);
 
   if (lastCommentTimestamp && isMomentRecent(lastCommentTimestamp, threeDayCutoffTime)) { // if commented by assignee within 3 days
     console.log(`Issue #${issueNum}: Commented by assignee within 3 days, retain '${statusUpdated}' label`);
